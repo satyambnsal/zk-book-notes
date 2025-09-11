@@ -32,6 +32,24 @@ $$\dfrac{1 * 10^6}{2^{254}}\approx \dfrac{2^{20}}{2^{254}} \approx \dfrac{1}{2^{
 To put a sense of scale on that, the number of atoms in the universe is about 10^78 to 10^82, so it is extremely unlikely that we will pick a point where the polynomials intersect, if the polynomials are not equal.
 
 
+**Using the Schwartz-Zippel Lemma to test if two vectors are equal**
+
 
 We can test if two vectors are equal in O(1) time by converting them to polynomial, then running the Schwartz- Zippel Lemma test on the polynomials. 
+
+[See example](../code-snippets/01_zippel_lemma.py)
+
+
+End goal is for prover to send a small string of data to the verifier that the verifier can quickly check.
+
+Most of the time, a ZK proof is essentially a polynomial evaluated at a random point.
+
+The difficulty we have to solve is that we don't if the polynomial is evaluated honestly. somehow we have to trust the prover isn't lying when they evaluate f(u).
+
+
+How to represent an entire circuit as a small set of polynomials evaluated at a random point ??
+
+
+
+
 
