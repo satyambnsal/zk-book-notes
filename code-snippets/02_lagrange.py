@@ -19,8 +19,8 @@ Q: What would be the value of  y points in this case ??
 
 
 from scipy.interpolate import lagrange
-x_values = [1,2,3,4]
-y_values = [4,8,2,1]
+x_values = [1,2,3]
+y_values = [8,8,64]
 
 print(lagrange(x_values, y_values))
 
