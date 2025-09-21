@@ -16,3 +16,16 @@ Thus, Circom
 2. automates witness population.
 
 
+# Addendum: Plonk vs Groth16 for Circom
+
+We write the same circuit for both Plonk prover systems and the Groth16 prover system.
+
+Groth16 allows an unlimited number of addition operations per constraint but only one non-constant multiplication. In contract, Plonk only allows one multiplication or one addition per constraint, and not both. The one-multiplication-per-constraint limitation will become apparent as we explore Circom.
+
+However, Circom 
+
+
+
+
+# References
+https://calnix.gitbook.io/zk-notes/circom/8-circom-other-reference-circuits
