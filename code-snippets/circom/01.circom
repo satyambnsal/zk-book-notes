@@ -9,4 +9,25 @@ template XOR() {
   log("output", out);
 }
 
-component main = XOR();
+// component main = XOR();
+
+template IsBinary(n) {
+  signal input in[n];
+
+  for (var i =0; i < n; i++) {
+    in[i] * (in[i] - 1) === 0;
+  }
+}
+
+template IsIndexMultiplied(n) {
+  signal input in1[n];
+  signal input in2[n];
+
+  for (var i = 0; i < n; i++) {
+    in1[i] * i === in2[i];
+  }
+}
+
+// component main = IsBinary(4);
+
+component main = IsIndexMultiplied(4);
