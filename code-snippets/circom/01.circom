@@ -28,6 +28,16 @@ template IsIndexMultiplied(n) {
   }
 }
 
+template QuadraticViolation1() {
+  signal input a;
+  signal input b;
+  signal input c;
+  signal input d;
+
+  a * b === c * d;
+}
 // component main = IsBinary(4);
 
-component main = IsIndexMultiplied(4);
+// component main = IsIndexMultiplied(4);
+
+component main = QuadraticViolation1();
